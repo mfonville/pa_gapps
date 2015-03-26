@@ -1,0 +1,572 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA1-Digest-Manifest: KzxSHBJw7Z8KYAA0fvM+/CAwrkw=
+
+Name: GApps/faceunlock/lib/libfilterpack_facedetect.so
+SHA1-Digest: 376zP9zdag0EgWPgLBMvH8x6fJM=
+
+Name: GApps/street/app/Street/Street.apk
+SHA1-Digest: ywJWcLMli85mGiuE2bqymf7oGOI=
+
+Name: GApps/speech/usr/srec/en-US/endpointer_voicesearch.config
+SHA1-Digest: YgfGSgoGDJK1dluAWKunliGvJbI=
+
+Name: GApps/speech/usr/srec/en-US/hotword_classifier
+SHA1-Digest: 4JgRkRhGNSS6uyi+0iYw1Wn/Mrk=
+
+Name: Core/required/framework/com.google.android.maps.jar
+SHA1-Digest: DjwumLPIud4WYgsqpqQ5P98KGEs=
+
+Name: GApps/speech/usr/srec/en-US/hmmlist
+SHA1-Digest: Vi7iZl2ruhOVJFPVyiWJQyVNIvc=
+
+Name: GApps/cloudprint/app/CloudPrint2/CloudPrint2.apk
+SHA1-Digest: jyRXlsCjekHHkbnTWu63bYsW66A=
+
+Name: GApps/drive/app/Drive/lib/arm/libbitmap_parcel.so
+SHA1-Digest: 62BhB+RFzLkzHuNZvO3W8JjuKQM=
+
+Name: GApps/messenger/app/PrebuiltBugle/lib/arm/libgiftranscode.so
+SHA1-Digest: yiv+BX4pL9x92MY9AKANBEh+87U=
+
+Name: Core/required/priv-app/GoogleFeedback/GoogleFeedback.apk
+SHA1-Digest: VZRCBf5WTcJecIt7FFMzAZMR5As=
+
+Name: GApps/hangouts/priv-app/Hangouts/lib/arm/libframesequence.so
+SHA1-Digest: MriZP9CUKCIYsC5JQzdGvb3Reo0=
+
+Name: GApps/speech/usr/srec/en-US/hotword.config
+SHA1-Digest: 4/5Jtg5q/vSl+aojOUCpmY7GgGs=
+
+Name: GApps/cameragoogle/app/GoogleCamera/lib/arm/librs.layered_filter
+ _fast_f32.so
+SHA1-Digest: 0CpFO5g0RIqMagSFsbQpeTev92g=
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest: Br6xNsbYLFIighT+FGsY/cB14YM=
+
+Name: GMSCore/common/priv-app/PrebuiltGmsCore/lib/arm/libgcastv2_base.
+ so
+SHA1-Digest: U/IrGS83x8iwKMyk8dJ3sA/eCZ0=
+
+Name: GApps/speech/usr/srec/en-US/dictation.config
+SHA1-Digest: 90C3y9Q7E671/Qk/O94zrVM0u1c=
+
+Name: PlayGames/0/app/PlayGames/PlayGames.apk
+SHA1-Digest: VFcuY+Hnz5yX3SVJzfbchs6KPm0=
+
+Name: GApps/chrome/app/Chrome/lib/arm/libchromium_android_linker.so
+SHA1-Digest: S4IdckVr0nkcaxtOFakPz7/qaXc=
+
+Name: GApps/hangouts/priv-app/Hangouts/lib/arm/libcronet.so
+SHA1-Digest: fshpNhynqMYCwQKBcSjMoCtogJg=
+
+Name: gapps-remove.txt
+SHA1-Digest: f099ZLTt7K6jNtI+ufzGPnzpdK8=
+
+Name: GApps/sheets/app/EditorsSheets/lib/arm/libwebp_android.so
+SHA1-Digest: dhOi0ouhntUMDalw7A47eX1n8Cg=
+
+Name: GApps/faceunlock/vendor/pittpatt/models/recognition/face.face.y0
+ -y0-71-N-tree_7-wmd.bin
+SHA1-Digest: 0Eneh3rEospgVbQg8pukzJWall4=
+
+Name: GApps/faceunlock/lib/libfacelock_jni.so
+SHA1-Digest: 5c3HEJvjJ8cZFAzpDG7K1Ol9pIg=
+
+Name: GApps/newsstand/app/Newsstand/Newsstand.apk
+SHA1-Digest: QxyKku70V/AmnzvZmryCtDwR1m4=
+
+Name: GApps/drive/app/Drive/lib/arm/libdocscanner_image.so
+SHA1-Digest: HubH7pbC7+ThrGU3w2q3Bx8lX7g=
+
+Name: GApps/faceunlock/vendor/pittpatt/models/detection/yaw_roll_face_
+ detectors.7.1/head-y0-yi45-p0-pi45-r0-ri30.4a-v24-tree7-2-wmd.bin
+SHA1-Digest: zQ4gGePbzNO9dIHCGB1JJJw5Hng=
+
+Name: GApps/googleplus/app/PlusOne/lib/arm/libfilterframework_jni.so
+SHA1-Digest: /SMQn7KiWUU6Q16AhaQxR9OLIKw=
+
+Name: Core/required/framework/com.google.widevine.software.drm.jar
+SHA1-Digest: TtUWDPvVWkDzbqDZha1JDlehbVs=
+
+Name: GApps/youtube/app/YouTube/lib/arm/libcronet.so
+SHA1-Digest: PAHQW7Ea4MTiU/cgzvd8CFoxJMA=
+
+Name: Core/required/priv-app/Phonesky/Phonesky.apk
+SHA1-Digest: PY7XX25yLf3kO4d3Z2K0AwNDtHo=
+
+Name: PlayGames/8/app/PlayGames/PlayGames.apk
+SHA1-Digest: MPYuza7vNVCpLZrHAMMdoQmr8L4=
+
+Name: Core/required/priv-app/GoogleServicesFramework/GoogleServicesFra
+ mework.apk
+SHA1-Digest: kNBLMWDZ0e124tmnwp0h4jDgUuo=
+
+Name: Optional/keybd_lib/lib/libjni_latinime.so
+SHA1-Digest: 3H4t8me96CiC81QwGmFN29ZaO6Q=
+
+Name: GApps/speech/usr/srec/en-US/hclg_shotword
+SHA1-Digest: 5eJvw+YY8BcL18cQqsF4YQxG9Yk=
+
+Name: GApps/speech/usr/srec/en-US/ep_acoustic_model
+SHA1-Digest: +WNBGsloxG4oK1z+fkttfiP0wy4=
+
+Name: GMSCore/common/priv-app/PrebuiltGmsCore/lib/arm/libgames_rtmp_jn
+ i.so
+SHA1-Digest: 3VAwyPcm+WI57JCkjpxKfBmWi7U=
+
+Name: GApps/hangouts/priv-app/Hangouts/lib/arm/libcrashreporterer.so
+SHA1-Digest: f8D5PtZwT8bxacf/mJnZuL+vrvQ=
+
+Name: GApps/sheets/app/EditorsSheets/lib/arm/libritz_ndk1.so
+SHA1-Digest: Qio0wTvXNug/DAf/dUfjdadDq2I=
+
+Name: GApps/cameragoogle/app/GoogleCamera/GoogleCamera.apk
+SHA1-Digest: 0CzbKqn4VpRBlRE7tvhe4+YuQus=
+
+Name: Core/required/priv-app/GoogleLoginService/GoogleLoginService.apk
+SHA1-Digest: 51mSwSgRHo4sX4ijttqosoIw3Tc=
+
+Name: GApps/speech/usr/srec/en-US/hotword_word_symbols
+SHA1-Digest: T9uj5B3WC59LV0XUEgFnP//KQWo=
+
+Name: GApps/speech/usr/srec/en-US/hotword_prompt.txt
+SHA1-Digest: 5UGHqGBEENMlBNWvzyCQoMCUXMM=
+
+Name: GApps/drive/app/Drive/lib/arm/libwebp_android.so
+SHA1-Digest: Vgwz16v/xo3xzOe1SSXtcwLmqso=
+
+Name: GMSCore/common/priv-app/PrebuiltGmsCore/lib/arm/libAppDataSearch
+ .so
+SHA1-Digest: 3AQ8tXu7jF83Le+34TONFmJtVGY=
+
+Name: GApps/youtube/app/YouTube/lib/arm/libm2ts_player.so
+SHA1-Digest: PKW1Lt7HPkfOnnjFCT0n0D2T5RQ=
+
+Name: GApps/keyboardgoogle/app/LatinImeGoogle/lib/arm/libjni_unbundled
+ _latinimegoogle.so
+SHA1-Digest: apFHce/+DuX9LXGtTYSoRrqCWKE=
+
+Name: GApps/drive/app/Drive/lib/arm/libfoxit.so
+SHA1-Digest: 65FBzojbSGITM33YSZaOdNJRR84=
+
+Name: GApps/slides/app/EditorsSlides/lib/arm/libpunch_ndk1.so
+SHA1-Digest: LE8ci0jo3qfIpCVBVAQNLIN2A4c=
+
+Name: GApps/sheets/app/EditorsSheets/EditorsSheets.apk
+SHA1-Digest: DDQYuQIqlc2GtZnevPxqvAQjV2c=
+
+Name: GApps/docs/app/EditorsDocs/lib/arm/libwebp_android.so
+SHA1-Digest: ovaZ6t4GsjzLCu0W6er4E5CULs8=
+
+Name: Core/required/priv-app/GoogleOneTimeInitializer/GoogleOneTimeIni
+ tializer.apk
+SHA1-Digest: S9nCky2EZUimJ8hjOLp0RiR0cNg=
+
+Name: Core/required/app/GoogleContactsSyncAdapter/GoogleContactsSyncAd
+ apter.apk
+SHA1-Digest: BVvO99sE8xqgyfcuqwqP3NUdjys=
+
+Name: GApps/faceunlock/vendor/pittpatt/models/detection/multi_pose_fac
+ e_landmark_detectors.8/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32-tree7-
+ wmd.bin
+SHA1-Digest: KUB8UCwdIpqm6dGPk0xK5pguUBg=
+
+Name: GApps/earth/app/GoogleEarth/lib/arm/libearthmobile.so
+SHA1-Digest: KpimrrvZZh5fkOsthjsHtspeStI=
+
+Name: GApps/newswidget/app/PrebuiltNewsWeather/PrebuiltNewsWeather.apk
+SHA1-Digest: Aibbvq+pNWBncq8b2cofzVXV5v4=
+
+Name: GApps/faceunlock/vendor/pittpatt/models/detection/yaw_roll_face_
+ detectors.7.1/head-y0-yi45-p0-pi45-rn30-ri30.5-v24-tree7-2-wmd.bin
+SHA1-Digest: cCP99V/b6xEgs8RWHr5MLu6BXuA=
+
+Name: SetupWizard/phone/priv-app/SetupWizard/SetupWizard.apk
+SHA1-Digest: JoqVN85jJAYMOEo/qhXoiPdWhNo=
+
+Name: GApps/drive/app/Drive/Drive.apk
+SHA1-Digest: 7n2Uyx0w5hhdlnfGWgx05VytKFg=
+
+Name: GMSCore/8/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk
+SHA1-Digest: BKk5lDE4s+TPRTqVQBreW/TzRv4=
+
+Name: Core/required/framework/com.google.android.media.effects.jar
+SHA1-Digest: KgZSVh5u5tSovGmOVYhC0ViRDNY=
+
+Name: GApps/search/priv-app/Velvet/lib/arm/libgoogle_speech_jni.so
+SHA1-Digest: GXhmFciGmmCrQsKfal7t01dM+sA=
+
+Name: GApps/googleplus/app/PlusOne/lib/arm/libcrashreporterer.so
+SHA1-Digest: ei5KR78gzBKQUiAVT3YrpuWEUlM=
+
+Name: GMSCore/common/priv-app/PrebuiltGmsCore/lib/arm/libWhisper.so
+SHA1-Digest: ugm8H9yqfJ45cultpCILBoryysg=
+
+Name: GApps/keyboardgoogle/app/LatinImeGoogle/LatinImeGoogle.apk
+SHA1-Digest: hjb0SbUMfffa6Dd4AfaVplOcx30=
+
+Name: sizes.prop
+SHA1-Digest: 8dsFgL+Rnt0DaOrzc55B9beyTdg=
+
+Name: GApps/search/priv-app/Velvet/lib/arm/libgoogle_speech_micro_jni.
+ so
+SHA1-Digest: rnthFGSoaUKXjSv3pxTrB5hB5Po=
+
+Name: GApps/googleplus/app/PlusOne/lib/arm/libcronet.so
+SHA1-Digest: ryyVF7mvn1ROb2BrhIJ5gPK3eFk=
+
+Name: Core/required/etc/preferred-apps/google.xml
+SHA1-Digest: m99WZqpc43KxHEz82zVGmuMqhUU=
+
+Name: GApps/googleplus/app/PlusOne/lib/arm/libmoviemaker-jni.so
+SHA1-Digest: naquwRY89vpzg69DfqYMuoZ9rfo=
+
+Name: GApps/hangouts/priv-app/Hangouts/Hangouts.apk
+SHA1-Digest: DVh8/fHZeqO4T3uUYpF/AgrQPU4=
+
+Name: GApps/speech/usr/srec/en-US/contacts.abnf
+SHA1-Digest: QARiN6w/N0JoCLeS2b4KdzOFdYU=
+
+Name: GMSCore/common/priv-app/PrebuiltGmsCore/lib/arm/libgcastv2_suppo
+ rt.so
+SHA1-Digest: F1SsT4WCkgGNr7w1ItrH/f1lkYU=
+
+Name: Core/required/priv-app/GooglePartnerSetup/GooglePartnerSetup.apk
+SHA1-Digest: I2H3CU1gzYsR8oKm3w2BJbjupQg=
+
+Name: GApps/googleplus/app/PlusOne/lib/arm/libphotoeditor_native.so
+SHA1-Digest: QJ7MfiLGRmK3y3E4ww54/NahQTA=
+
+Name: GApps/googletts/app/GoogleTTS/lib/arm/libpatts_engine_jni_api_ub
+ .210303130.so
+SHA1-Digest: xtLBA0waHXmG81zrbYsScw9QltM=
+
+Name: GApps/calsync/app/GoogleCalendarSyncAdapter/GoogleCalendarSyncAd
+ apter.apk
+SHA1-Digest: shgR3doeu01ppoyMvmNGGd8StmM=
+
+Name: GMSCore/common/priv-app/PrebuiltGmsCore/lib/arm/libgmscore.so
+SHA1-Digest: /8SF0yRoyv5+hf7fST7vppY/Mys=
+
+Name: GApps/youtube/app/YouTube/YouTube.apk
+SHA1-Digest: KXvMKbmuzETRdVbqsoWCxnWVMXI=
+
+Name: GApps/exchangegoogle/app/PrebuiltExchange3Google/PrebuiltExchang
+ e3Google.apk
+SHA1-Digest: gUUFEoFBa4J46zS4ArhP8VQNsnk=
+
+Name: GMSCore/4/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk
+SHA1-Digest: YR4fFVtO6xbdELnyVbLIGZ3s4CA=
+
+Name: GApps/speech/usr/srec/en-US/clg
+SHA1-Digest: rYrDnPXqfrVBmpQ0MwlMGsw5xV0=
+
+Name: GApps/slides/app/EditorsSlides/lib/arm/libdocsimageutils.so
+SHA1-Digest: NlCAtkGP35JYmTgpzmH/7HJgTII=
+
+Name: GApps/docs/app/EditorsDocs/lib/arm/libdocsimageutils.so
+SHA1-Digest: 1stXs3AcdtynCzvhzKrFmUs522U=
+
+Name: GApps/speech/usr/srec/en-US/rescoring_lm
+SHA1-Digest: 3G9ZNtUYHd8SMAPS4WjiU9ZNRXQ=
+
+Name: GApps/cameragoogle/app/GoogleCamera/lib/arm/librefocus.so
+SHA1-Digest: usTXlCVqKsUt3CypXDuC89x/ZEQ=
+
+Name: GApps/chrome/app/Chrome/Chrome.apk
+SHA1-Digest: 3xX4Y7kV2EWRSZdpwyjrP9ywVMw=
+
+Name: GApps/messenger/app/PrebuiltBugle/lib/arm/libframesequence.so
+SHA1-Digest: 4P2QrpAeEj3SjYmKwymz9vJKFAs=
+
+Name: GApps/cameragoogle/app/GoogleCamera/lib/arm/libgcam_swig_jni.so
+SHA1-Digest: TLwgszFmb0bEM6QASTwIbuwWIK0=
+
+Name: GApps/speech/usr/srec/en-US/phonelist
+SHA1-Digest: 7P5XXnFz9Lxjc0nFAeRTNJwU7WE=
+
+Name: GMSCore/6/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk
+SHA1-Digest: rjTRPcbIh+pep2kOqvJV0o8dmUo=
+
+Name: g.prop
+SHA1-Digest: /j4dvE584gK4+dlq9tKT8NKWQp0=
+
+Name: GApps/drive/app/Drive/lib/arm/libdocsimageutils.so
+SHA1-Digest: 8rUSwkrcSpwgIx5ycry7S/Z9vmk=
+
+Name: GApps/sunbeam/app/SunBeam/SunBeam.apk
+SHA1-Digest: lUm3PQc+0c59AJZiaeIFZzZEh9Y=
+
+Name: Core/required/etc/permissions/com.google.android.media.effects.x
+ ml
+SHA1-Digest: dOM1izPF79qQe9ry2RIbLA4D4Oc=
+
+Name: GMSCore/common/priv-app/PrebuiltGmsCore/lib/arm/libconscrypt_gms
+ core_jni.so
+SHA1-Digest: Bp2d7sBicEQZWcAnFl6KF3a25II=
+
+Name: GApps/faceunlock/app/FaceLock/FaceLock.apk
+SHA1-Digest: Zx10Q4vIbC5GiWnNxPWOVLYQIN4=
+
+Name: Core/required/etc/permissions/com.google.android.camera2.xml
+SHA1-Digest: smWu86g7eRgr2G7oIWvShqzrqiQ=
+
+Name: GApps/maps/app/Maps/Maps.apk
+SHA1-Digest: TlkBzuwu1dEmiNi3mgZ6mfSzjCo=
+
+Name: GApps/earth/app/GoogleEarth/GoogleEarth.apk
+SHA1-Digest: Z8/n/7CcXU5miTmF16DwkffFH6Q=
+
+Name: GApps/chrome/app/Chrome/lib/arm/libchrome.so
+SHA1-Digest: fXhWVdIBJJoU/sGbPlup9AjAQlU=
+
+Name: GApps/slides/app/EditorsSlides/lib/arm/libwebp_android.so
+SHA1-Digest: xOUNPnGrjrb/nttZ3yH/65koW98=
+
+Name: GApps/cameragoogle/app/GoogleCamera/lib/arm/libnativehelper_comp
+ at_libc++.so
+SHA1-Digest: Fh3TakTTMAchPmCo05P7Hc155yg=
+
+Name: Core/required/framework/com.google.android.camera2.jar
+SHA1-Digest: S6+mrX1wTLa09XpeLGBi5IWjGmM=
+
+Name: GApps/speech/usr/srec/en-US/compile_grammar.config
+SHA1-Digest: BgM8M/MVPu+VaJy7Dr0bB9cRobM=
+
+Name: installer.data
+SHA1-Digest: YXgXRm0FLDVLMjhT52XNLZC/sgY=
+
+Name: GApps/faceunlock/vendor/pittpatt/models/detection/yaw_roll_face_
+ detectors.7.1/pose-y-r.8.1.bin
+SHA1-Digest: 3Flq/TTpqrdzn+5cJ60fLwskCR4=
+
+Name: GApps/talkback/app/talkback/talkback.apk
+SHA1-Digest: LTNrt0VjaAJ0fp5RnVP0t0rdXmo=
+
+Name: GApps/cameragoogle/app/GoogleCamera/lib/arm/libRSSupport.so
+SHA1-Digest: l6RXc065cSMrzydLBcyZ6HZK8d8=
+
+Name: GApps/speech/usr/srec/en-US/c_fst
+SHA1-Digest: w3aN8pJ3etFU794Ih+pZrhRLOG0=
+
+Name: GApps/speech/usr/srec/en-US/metadata
+SHA1-Digest: xhd7tccyKCtgTOIzHcmtIFVO670=
+
+Name: PlayGames/6/app/PlayGames/PlayGames.apk
+SHA1-Digest: VTcwhvGYOX/S+BE/qVAPuh1l96s=
+
+Name: GApps/cameragoogle/app/GoogleCamera/lib/arm/liblightcycle.so
+SHA1-Digest: y86bS6/aPrqvPk7tnbUwTqqUWgY=
+
+Name: GApps/speech/usr/srec/en-US/endpointer_dictation.config
+SHA1-Digest: Bzd9j7L1dPov5mzs9Q86fiow2zM=
+
+Name: GMSCore/common/priv-app/PrebuiltGmsCore/lib/arm/libgms-ocrclient
+ .so
+SHA1-Digest: YFuhlqh63zwtV9ZBVZu1JShyEgQ=
+
+Name: GApps/googletts/app/GoogleTTS/GoogleTTS.apk
+SHA1-Digest: waSCMs174YgbT6frW8f8K4obhm8=
+
+Name: GApps/speech/usr/srec/en-US/grammar.config
+SHA1-Digest: vanNya6QTTgyg7lCnJc8dVW13Zo=
+
+Name: SetupWizard/tablet/priv-app/SetupWizard/SetupWizard.apk
+SHA1-Digest: +DOeF5XAV3DAMSOYpyMI02WwNxc=
+
+Name: GApps/gmail/app/PrebuiltGmail/PrebuiltGmail.apk
+SHA1-Digest: gm6HZucuoIog7IhrDe72idOxZ94=
+
+Name: GApps/ears/app/GoogleEars/GoogleEars.apk
+SHA1-Digest: dQdv1SN6nmnM2JMpRiNQymqoCs8=
+
+Name: GApps/speech/usr/srec/en-US/dict
+SHA1-Digest: uqH45nN+mifp8lvYjy1phbs04Kg=
+
+Name: GApps/hangouts/priv-app/Hangouts/lib/arm/libvideochat_jni.so
+SHA1-Digest: 6h6C+PUM+5n+5jZT5ocMkJ9MKEs=
+
+Name: GApps/docs/app/EditorsDocs/EditorsDocs.apk
+SHA1-Digest: 4ilbFX12/KlED7shyqZLhZ4BPgM=
+
+Name: GApps/googleplus/app/PlusOne/lib/arm/libwebp_android.so
+SHA1-Digest: G/qqlFGhytSPzt9VoBy4H74jRcA=
+
+Name: GApps/wallet/priv-app/Wallet/lib/arm/libgoogle-ocrclient.so
+SHA1-Digest: GDLWTirW4/BzHH1O2mkYKZWKQNI=
+
+Name: GApps/movies/app/Videos/lib/arm/libWVphoneAPI.so
+SHA1-Digest: qS6I/daLj02SjADbMQDN6wRrSmI=
+
+Name: GApps/movies/app/Videos/Videos.apk
+SHA1-Digest: ZmYpt7vzskSdTjAvoe0vbYrfzzY=
+
+Name: GApps/faceunlock/vendor/pittpatt/models/detection/yaw_roll_face_
+ detectors.7.1/pose-r.8.1.bin
+SHA1-Digest: UcMomcw7T1Cjjom+NusRa+Bbd9I=
+
+Name: GApps/ears/app/GoogleEars/lib/arm/libvorbisencoder.so
+SHA1-Digest: McQfA9Z2eDihy2Ht+HPy4joxvSA=
+
+Name: Core/required/priv-app/GoogleBackupTransport/GoogleBackupTranspo
+ rt.apk
+SHA1-Digest: hwhDKWCMJ4xOZPWPeolqJrFa0W0=
+
+Name: GApps/speech/usr/srec/en-US/phone_state_map
+SHA1-Digest: 69IDlf5PN6je2t9UxNtjG57aTNI=
+
+Name: GApps/maps/app/Maps/lib/arm/libgmm-jni.so
+SHA1-Digest: B4kCxL4k9V5l4ZXRPf4qX0BUom0=
+
+Name: GApps/faceunlock/vendor/pittpatt/models/detection/multi_pose_fac
+ e_landmark_detectors.8/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-tree7-w
+ md.bin
+SHA1-Digest: eG1/4Mk7Gu8pXZ3lU4Sa1qYdA4U=
+
+Name: GApps/youtube/app/YouTube/lib/arm/libfilterframework_jni.so
+SHA1-Digest: dQN04PAI9JF3mQ74cEjJXnIy33w=
+
+Name: GApps/googlenow/app/GoogleHome/GoogleHome.apk
+SHA1-Digest: ZPe5mi931ZDW+/Mwrz9MjsZv1iM=
+
+Name: GApps/cameragoogle/app/GoogleCamera/lib/arm/libjpeg.so
+SHA1-Digest: XBqqD97QjQDIcYiS3/T2j+zncy0=
+
+Name: GApps/sheets/app/EditorsSheets/lib/arm/libdocsimageutils.so
+SHA1-Digest: QdwkXIevmp8zMlEPVPYmgR+uQ6w=
+
+Name: GApps/messenger/app/PrebuiltBugle/PrebuiltBugle.apk
+SHA1-Digest: GIBP1SxdJSVFXlCUHi6gYvbfMLI=
+
+Name: Core/required/etc/permissions/com.google.widevine.software.drm.x
+ ml
+SHA1-Digest: OXWxoTQL/autjYDUyNiRVESpWOo=
+
+Name: GMSCore/0/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk
+SHA1-Digest: lgwJ1y6xqONepw9HjLyLwCAUo6I=
+
+Name: GApps/speech/usr/srec/en-US/hotword_normalizer
+SHA1-Digest: WX61ZKcJ+ASx6KlZM7S2Ep+P7kw=
+
+Name: GApps/speech/usr/srec/en-US/dnn
+SHA1-Digest: 9HqaphBLYzXxA9EhYLgO4/7uNM8=
+
+Name: GApps/speech/usr/srec/en-US/offensive_word_normalizer
+SHA1-Digest: b7FyK1SKhkH40v803mN7gGf3N3k=
+
+Name: GApps/googleplus/app/PlusOne/PlusOne.apk
+SHA1-Digest: xWSo16PLk2RSwbE3WKRXi0FFcds=
+
+Name: GApps/search/priv-app/Velvet/lib/arm/libcronet.so
+SHA1-Digest: ELk6pWO7LfR76gknmJABO0tMOZM=
+
+Name: GApps/cameragoogle/app/GoogleCamera/lib/arm/libjni_jpegutil.so
+SHA1-Digest: Md5QmLR3rLBJX1MEZ1XMysPTRMc=
+
+Name: GApps/faceunlock/vendor/pittpatt/models/detection/multi_pose_fac
+ e_landmark_detectors.8/landmark_group_meta_data.bin
+SHA1-Digest: Cc/TKtagUlq3ZWcYNCVinBmSFAk=
+
+Name: GApps/books/app/Books/Books.apk
+SHA1-Digest: HzV6pQXEH5cUGnRrhXghb6wiQeU=
+
+Name: GApps/cameragoogle/app/GoogleCamera/lib/arm/libgcam.so
+SHA1-Digest: uRWMzKHEJrE4fgU11R+yrrk1GY8=
+
+Name: GApps/speech/usr/srec/en-US/commands.abnf
+SHA1-Digest: XeWJKzatMMExvn8ugeXoKwsZVlQ=
+
+Name: GApps/cameragoogle/app/GoogleCamera/lib/arm/librsjni.so
+SHA1-Digest: 90uWlu3DH1/Bq3Vr4h40On0FgYo=
+
+Name: GApps/music/app/Music2/Music2.apk
+SHA1-Digest: ctwIyfncgSapB396U+WW7RuECWI=
+
+Name: Core/required/etc/permissions/com.google.android.maps.xml
+SHA1-Digest: zxRypsQAEQl2ggxrDU0/WJBCDcI=
+
+Name: GApps/drive/app/Drive/lib/arm/librectifier.so
+SHA1-Digest: nYI59ihDxm+ju0EBixx08Ak0Q6M=
+
+Name: GApps/wallet/priv-app/Wallet/Wallet.apk
+SHA1-Digest: /YEH23TbqhbCc3ksafMwM7F/QP4=
+
+Name: GApps/speech/usr/srec/en-US/normalizer
+SHA1-Digest: 4uEn3gOng69Jftx4iHWrYgLXYE0=
+
+Name: GApps/speech/usr/srec/en-US/norm_fst
+SHA1-Digest: Evx+dIM5mQz1gghgWJGrzNXrEgY=
+
+Name: GApps/calendargoogle/app/CalendarGooglePrebuilt/CalendarGooglePr
+ ebuilt.apk
+SHA1-Digest: 4WsrkmoQOleXjzQpejOOrTbMZ7A=
+
+Name: GApps/speech/usr/srec/en-US/wordlist
+SHA1-Digest: 0tB43XYfGaj/8LZVebGhtrNXXOg=
+
+Name: GMSCore/common/priv-app/PrebuiltGmsCore/lib/arm/libNearbyApp.so
+SHA1-Digest: HtN0x/v2s+d+MJCi87YOfFhFJqw=
+
+Name: GApps/keep/app/PrebuiltKeep/PrebuiltKeep.apk
+SHA1-Digest: 8Z7VyafNB75ILhtd7ZYLoRqNoOg=
+
+Name: GMSCore/common/priv-app/PrebuiltGmsCore/lib/arm/libjgcastservice
+ .so
+SHA1-Digest: A/illQ0X3xk1zYVlleJI4pGVKFY=
+
+Name: PlayGames/4/app/PlayGames/PlayGames.apk
+SHA1-Digest: 7dY33dMeHSF6cNfQjHD+asDLxkk=
+
+Name: GApps/faceunlock/vendor/pittpatt/models/detection/yaw_roll_face_
+ detectors.7.1/head-y0-yi45-p0-pi45-rp30-ri30.5-v24-tree7-2-wmd.bin
+SHA1-Digest: a7Orj2Cpm/cxj7DOVtyz5d/IXWI=
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest: HlV8jLW2rvHSeQFcW36xJv/oCcI=
+
+Name: GApps/speech/usr/srec/en-US/g2p_fst
+SHA1-Digest: Mmv/G/5i0ku1zW99N9BOWrh3R/o=
+
+Name: GApps/speech/usr/srec/en-US/hmm_symbols
+SHA1-Digest: EnkQeQELY1kpiekidL1l5CZKAFI=
+
+Name: GApps/slides/app/EditorsSlides/EditorsSlides.apk
+SHA1-Digest: CMoF78+9KidkxIyJj34+Tq2OW2M=
+
+Name: GApps/googletts/app/GoogleTTS/lib/arm/libspeexwrapper_ub.2103031
+ 30.so
+SHA1-Digest: HvLHibvkHfMa8nAumsgIRNfMAVQ=
+
+Name: GApps/docs/app/EditorsDocs/lib/arm/libkix_ndk1.so
+SHA1-Digest: V1OBQxTnMeG/3YDY0L9R/mmmMas=
+
+Name: GApps/cameragoogle/app/GoogleCamera/lib/arm/librs.layered_filter
+ _f32.so
+SHA1-Digest: kqMh+b0Kk7W81dTHu+6senxMYKs=
+
+Name: GApps/cameragoogle/app/GoogleCamera/lib/arm/libjni_tinyplanet.so
+SHA1-Digest: 7HPvpdB/1rzN3jEUA777NsSTsU4=
+
+Name: GApps/search/priv-app/Velvet/lib/arm/libvcdecoder_jni.so
+SHA1-Digest: UWyF9wK+2ZZNpTY+Dk7vg4dnmls=
+
+Name: bkup_tail.sh
+SHA1-Digest: mlkvikUewXkmK7XOdQ9dB/OjGRI=
+
+Name: GApps/faceunlock/vendor/pittpatt/models/detection/multi_pose_fac
+ e_landmark_detectors.8/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-3-tree
+ 7-wmd.bin
+SHA1-Digest: k/Fg2ydEhY/RBOK/1v+4KgFg7Js=
+
+Name: GMSCore/common/priv-app/PrebuiltGmsCore/lib/arm/libsslwrapper_jn
+ i.so
+SHA1-Digest: KynQTSD6lu4gqQ0nbC1ALmMN/+c=
+
+Name: GApps/maps/app/Maps/lib/arm/libcrashreporterer.so
+SHA1-Digest: yVqBhb52phWSs5kpPPUYOD2kPD8=
+
+Name: GApps/search/priv-app/Velvet/Velvet.apk
+SHA1-Digest: hFskxDn59RfvcPuQT3TrwrLLWoc=
+
