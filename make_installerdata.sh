@@ -1,6 +1,8 @@
-# Installation Data for PA Lollipop GApps Installer by @mfonville based on the work of @TKruzze
-# Last Updated: 2015-05-01
-# _____________________________________________________________________________________________________________________
+#!/bin/sh
+now=$(date +"%Y-%m-%d")
+echo "# Installation Data for PA Lollipop GApps Installer by @mfonville based on the work of @TKruzze
+# Last Updated: "$now > installer.data
+echo '# _____________________________________________________________________________________________________________________
 #                                             Define Current Package Variables
 # List of GApps packages that can be installed with this installer
 pkg_names="pico nano micro mini full stock";
@@ -13,14 +15,29 @@ keybd_lib_filename1="libjni_latinime.so";
 keybd_lib_filename2="libjni_latinimegoogle.so";
 FaceLock_lib_filename="libfacelock_jni.so";
 
-# Google Play Services version sizes
-gms_0_size=44412; gms_4_size=35280; gms_6_size=35716; gms_8_size=36576;
+# Google Play Services version sizes' >> installer.data
+gms0=`du -s GMSCore/0 | cut -f 1`
+gms4=`du -s GMSCore/4 | cut -f 1`
+gms6=`du -s GMSCore/6 | cut -f 1`
+gms8=`du -s GMSCore/8 | cut -f 1`
+gmscommon=`du -s GMSCore/common | cut -f 1`
+echo "gms_0_size="`expr $gms0 + $gmscommon`"; gms_4_size="`expr $gms4 + $gmscommon`"; gms_6_size="`expr $gms6 + $gmscommon`"; gms_8_size="`expr $gms8 + $gmscommon`";
 
-# Google Play Games version sizes
-pg_0_size=7664; pg_4_size=4892; pg_6_size=5016; pg_8_size=5412;
+# Google Play Games version sizes" >> installer.data
+pg0=`du -s PlayGames/0 | cut -f 1`
+pg4=`du -s PlayGames/4 | cut -f 1`
+pg6=`du -s PlayGames/6 | cut -f 1`
+pg8=`du -s PlayGames/8 | cut -f 1`
+echo "pg_0_size="$pg0"; pg_4_size="$pg4"; pg_6_size="$pg6"; pg_8_size="$pg8";
 
-# Core & Optional Apps size
-core_size=21980; setupwiz_tablet_size=2856; setupwiz_phone_size=3944; keybd_lib_size=672;
+# Core & Optional Apps size" >> installer.data
+core=`du -s Core | cut -f 1`
+setupwiztablet=`du -s SetupWizard/tablet | cut -f 1`
+setupwizphone=`du -s SetupWizard/phone | cut -f 1`
+keybdlib=`du -s Optional/keybd_lib | cut -f 1`
+echo "core_size="$core"; setupwiz_tablet_size="$setupwiztablet"; setupwiz_phone_size="$setupwizphone"; keybd_lib_size="$keybdlib";">> installer.data
+
+cat >>installer.data <<EOF
 
 # Buffer of extra system space to require for GApps install (9216=9MB)
 # This will allow for some ROM size expansion when GApps are restored
@@ -277,7 +294,7 @@ obsolete_list="
 #";
 
 # Obsolete files from xxxx
-#obsolete_list="
+#obsolete_list="${obsolete_list}
 #";
 
 # Old gaddon.d backup scripts as we'll be replacing with updated version during install
@@ -290,7 +307,7 @@ oldscript_list="
 /system/addon.d/78-chromebrowser.sh
 ";
 
-remove_list="";
+remove_list="${other_list}${privapp_list}${reqd_list}${obsolete_list}${oldscript_list}";
 # _____________________________________________________________________________________________________________________
 #                                             Installer Error Messages
 64bit_compat_msg="INSTALLATION FAILURE: PA GApps are not compatible with 64-bit devices. You will\nneed to find a 64-bit compatible GApps package that will worok with your device.\n";
@@ -303,7 +320,8 @@ nokeyboard_msg="NOTE: The Stock/AOSP keyboard was NOT removed as requested to en
 nolauncher_msg="NOTE: The Stock/AOSP Launcher was NOT removed as requested to ensure your device\nwas not accidentally left with no Launcher. If this was your intention, you can\nadd 'Override' to your gapps-config to override this protection.\n";
 nomms_msg="NOTE: The Stock/AOSP MMS app was NOT removed as requested to ensure your device\nwas not accidentally left with no way to receive text messages. If this WAS\nintentional, add 'Override' to your gapps-config to override this protection.\n";
 non_pa_gapps_msg="INSTALLATION FAILURE: PA GApps can only be installed on top of an existing\nPA GApps installation. Since you are currently using another GApps package, you\nwill need to wipe (format) your system partition before installing PA GApps.\n";
-rom_version_msg="INSTALLATION FAILURE: This GApps package can only be installed on a .x ROM.\n";
+rom_version_msg="INSTALLATION FAILURE: This GApps package can only be installed on a $req_android_version.x ROM.\n";
 simulation_msg="TEST INSTALL: This was only a simulated install. NO CHANGES WERE MADE TO YOUR\nDEVICE. To complete the installation remove 'Test' from your gapps-config.\n";
 system_space_msg="INSTALLATION FAILURE: Your device does not have sufficient space available in\nthe system partition to install this GApps package as currently configured.\nYou will need to switch to a smaller GApps package or use gapps-config to\nreduce the installed size.\n";
 del_conflict_msg="!!! WARNING !!! - Duplicate files were noted between your ROM and this GApps\npackage. The duplicate files are shown in the log portion below. Please report\nthis information to the PA GApps developer (TKruzze) in the XDA forum.\n";
+EOF
