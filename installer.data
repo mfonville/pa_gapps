@@ -14,10 +14,10 @@ keybd_lib_filename2="libjni_latinimegoogle.so";
 FaceLock_lib_filename="libfacelock_jni.so";
 
 # Google Play Services version sizes
-gms_0_size=44412; gms_4_size=35280; gms_6_size=35716; gms_8_size=36576;
+gms_0_size=48452; gms_4_size=38980; gms_6_size=39428; gms_8_size=40332;
 
 # Google Play Games version sizes
-pg_0_size=7664; pg_4_size=4892; pg_6_size=5016; pg_8_size=5412;
+pg_0_size=8028; pg_4_size=5336; pg_6_size=5464; pg_8_size=5856;
 
 # Core & Optional Apps size
 core_size=21980; setupwiz_tablet_size=2856; setupwiz_phone_size=3944; keybd_lib_size=672;
