@@ -1,4 +1,5 @@
-Download one of the latest Nexus images from https://developers.google.com/android/nexus/images
+Download one of the latest Nexus Phone images from https://developers.google.com/android/nexus/image
+If you don't use the image of a phone, some applications and libraries might miss, like the camera and/or the dialer. Pay also attention that jar files are not lacking their classes.dex!
 
 Extract the image-xxxxx-xxxxxx.zip from from the tgz archive
 
@@ -8,43 +9,35 @@ Convert the system.img from a sparse android file to a disk-image file using and
 
 Open the system.raw.img using a disk-mount application
 
-Next copy the following files from the mounted image to the Nexus folder:
+Next copy the following files from the mounted system image to the Nexus folder:
 
-From /app/:
-GoogleContactsSyncAdapter
-FaceLock
+/app/GoogleContactsSyncAdapter
+/app/FaceLock
 
-From /etc/permissions/:
-com.google.android.camera2.xml
-com.google.android.maps.xml
-com.google.android.media.effects.xml
-com.google.widevine.software.drm.xml
+/etc/permissions/com.google.android.camera2.xml
+/etc/permissions/com.google.android.dialer.support.xml
+/etc/permissions/com.google.android.maps.xml
+/etc/permissions/com.google.android.media.effects.xml
+/etc/permissions/com.google.widevine.software.drm.xml
 
-From /etc/preferred-apps/:
-google.xml
+/etc/preferred-apps/google.xml
 
-From /framework/:
-com.google.android.camera2.jar
-com.google.android.maps.jar
-com.google.android.media.effects.jar
-com.google.widevine.software.drm.jar
+/framework/com.google.android.camera2.jar
+/framework/com.google.android.maps.jar
+/framework/com.google.android.media.effects.jar
+/framework/com.google.widevine.software.drm.jar
 
-From /lib/:
-libfacelock_jni.so
-libjni_latinimegoogle.so
+/lib/libfacelock_jni.so
+/lib/libjni_latinimegoogle.so
 
-From /priv-app/:
-GoogleBackupTransport
-GoogleFeedback
-GoogleLoginService
-GoogleOneTimeInitializer
-GooglePartnerSetup
-GoogleServicesFramework
-Phonesky
-SetupWizard
+/priv-app/GoogleBackupTransport
+/priv-app/GoogleFeedback
+/priv-app/GoogleLoginService
+/priv-app/GoogleOneTimeInitializer
+/priv-app/GooglePartnerSetup
+/priv-app/GoogleServicesFramework
+/priv-app/Phonesky
+/priv-app/SetupWizard
 
-From /usr/:
-srec
-
-From /vendor/:
-pittpatt
+/usr/srec
+/vendor/pittpatt

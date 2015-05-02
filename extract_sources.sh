@@ -66,11 +66,21 @@ zip -U $pg4 -O PlayGames/4/app/PlayGames/PlayGames.apk --exclude javax* lib* jsr
 zip -U $pg6 -O PlayGames/6/app/PlayGames/PlayGames.apk --exclude javax* lib* jsr* third_party/java_src/js*_inject*
 zip -U $pg8 -O PlayGames/8/app/PlayGames/PlayGames.apk --exclude javax* lib* jsr* third_party/java_src/js*_inject*
 
-#SetupWizard
-setupwiz=`find SourceAPKs/ -iname 'SetupWizard.apk' | head -1`
-copy $setupwiz "SetupWizard/priv-app/SetupWizard/"
+#####---------CORE APPLICATIONS---------
+contactsync=`find SourceAPKs/ -iname 'GoogleContactsSyncAdapter.apk' | head -1`
+copy $contactsync "Core/required/app/GoogleContactsSyncAdapter/"
 
-#We miss the source APKs for the SetupWizard, if anyone can provide a reliable and up-to-date source of those, please notify me!
+etcpermissions=`find SourceAPKs/ -iname 'permissions' | head -1`
+copy $etcpermissions "Core/required/etc/permissions/"
+
+etcpreferredapps=`find SourceAPKs/ -iname 'preferred-apps' | head -1`
+copy $etcpreferredapps "Core/required/etc/preferred-apps/"
+
+framework=`find SourceAPKs/ -iname 'framework' | head -1`
+copy $framework "Core/required/framework/"
+
+privapp=`find SourceAPKs/ -iname 'priv-app' | head -1`
+copy $privapp "Core/required/priv-app/"
 
 #####---------NOW THE GENERIC PACKAGES---------
 #Books

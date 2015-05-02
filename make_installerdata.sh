@@ -44,9 +44,8 @@ echo "pg_0_size="$pg0"; pg_4_size="$pg4"; pg_6_size="$pg6"; pg_8_size="$pg8";
 
 # Core & Optional Apps size" >> installer.data
 core=`du -s Core | cut -f 1`
-setupwiz=`du -s SetupWizard | cut -f 1`
 keybdlib=`du -s Optional/keybd_lib | cut -f 1`
-echo "core_size="$core"; setupwiz_size="$setupwiz"; keybd_lib_size="$keybdlib";">> installer.data
+echo "core_size="$core"; keybd_lib_size="$keybdlib";">> installer.data
 
 cat >>installer.data <<EOF
 

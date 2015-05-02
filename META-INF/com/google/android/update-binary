@@ -1,9 +1,9 @@
 #!/sbin/sh
 #
-# PA GApps 2.0 Shell Script Installer
-# Created by @TKruzze with MAJOR script contributions by @osm0sis
+# PA GApps 2.0a Shell Script Installer
+# Created by @mfonville, based on the work of @TKruzze and @osm0sis
 #
-# Last Updated: 2015-03-14
+# Last Updated: 2015-05-02
 unzip -o "$3" installer.data sizes.prop g.prop gapps-remove.txt bkup_tail.sh -d /tmp;
 . /tmp/installer.data;
 . /tmp/sizes.prop;
@@ -704,9 +704,7 @@ eval "playgames_size=\$pg_${gms}_size"; # Determine size of PlayGames
 
 # Determine final size of Core Apps
 if ( ! contains "$gapps_list" "keyboardgoogle" ); then
-    core_size=$((core_size + setupwiz_size + keybd_lib_size)); # Add SetupWizard & Keyboard Lib size to core
-else
-    core_size=$((core_size + setupwiz_size)); # Add SetupWizard size to core
+    core_size=$((core_size + keybd_lib_size)); # Add Keyboard Lib size to core
 fi;
 
 # Read and save system partition size details
@@ -843,7 +841,6 @@ ui_print "- Installing updated GApps";
 ui_print " ";
 set_progress 0.15;
 folder_extract Core required; # Install Core GApps
-folder_extract SetupWizard; # Install SetupWizard
 if ( ! contains "$gapps_list" "keyboardgoogle" ); then
     folder_extract Optional keybd_lib; # Install Keyboard lib to add swipe capabilities to AOSP Keyboard
     mkdir -p /system/app/LatinIME/lib/arm;
