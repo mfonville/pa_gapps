@@ -11,7 +11,7 @@
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #    GNU General Public License for more details.
 #
-zip -r gapps_unsigned.zip Core GApps GMSCore META-INF Optional PlayGames SetupWizerd bkup_tail.sh g.prop gapps-remove.txt installer.data sizes.prop
-now=$(date +"%d%m%Y")
-java -Xmx2048m -jar signapk.jar -w testkey.x509.pem testkey.pk8 gapps_unsigned.zip pa_gapps-5.1-$now.zip
+zip -r -Z store gapps_unsigned.zip Core GApps GMSCore META-INF Optional PlayGames SetupWizard bkup_tail.sh g.prop gapps-remove.txt installer.data sizes.prop
+now=$(date +"%Y%m%d")
+java -Xmx3072m -jar signapk.jar -w testkey.x509.pem testkey.pk8 gapps_unsigned.zip pa_gapps-5.1-$now.zip
 rm gapps_unsigned.zip
