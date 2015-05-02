@@ -701,7 +701,6 @@ ui_print " ";
 # Perform calculations of device specific applications
 eval "gms_size=\$gms_${gms}_size"; # Determine size of GMSCore
 eval "playgames_size=\$pg_${gms}_size"; # Determine size of PlayGames
-eval "setupwiz_size=\$setupwiz_${device_type}_size"; # Determine size of SetupWizard
 
 # Determine final size of Core Apps
 if ( ! contains "$gapps_list" "keyboardgoogle" ); then
@@ -844,7 +843,7 @@ ui_print "- Installing updated GApps";
 ui_print " ";
 set_progress 0.15;
 folder_extract Core required; # Install Core GApps
-folder_extract SetupWizard $device_type; # Install SetupWizard
+folder_extract SetupWizard; # Install SetupWizard
 if ( ! contains "$gapps_list" "keyboardgoogle" ); then
     folder_extract Optional keybd_lib; # Install Keyboard lib to add swipe capabilities to AOSP Keyboard
     mkdir -p /system/app/LatinIME/lib/arm;

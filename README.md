@@ -20,3 +20,6 @@ The goal of this file is to genarate the size.prop file with correct sizes about
 # make_package.sh
 If you have extracted the sources and have ran all the other make-scripts, you can create a signed package using this script.
 
+
+# Changes in 'options' compared to original package
+Sunbeam has been completely removed from the package

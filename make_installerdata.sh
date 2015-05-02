@@ -23,8 +23,8 @@ pkg_names="pico nano micro mini full stock";
 installer_name="PA Google Stock GApps 5.1 - ";
 
 req_android_version="5.1";
-keybd_lib_filename1="libjni_latinime.so";
-keybd_lib_filename2="libjni_latinimegoogle.so";
+keybd_lib_filename1="libjni_latinimegoogle.so";
+keybd_lib_filename2="libjni_latinime.so";
 FaceLock_lib_filename="libfacelock_jni.so";
 
 # Google Play Services version sizes' >> installer.data
@@ -44,10 +44,9 @@ echo "pg_0_size="$pg0"; pg_4_size="$pg4"; pg_6_size="$pg6"; pg_8_size="$pg8";
 
 # Core & Optional Apps size" >> installer.data
 core=`du -s Core | cut -f 1`
-setupwiztablet=`du -s SetupWizard/tablet | cut -f 1`
-setupwizphone=`du -s SetupWizard/phone | cut -f 1`
+setupwiz=`du -s SetupWizard | cut -f 1`
 keybdlib=`du -s Optional/keybd_lib | cut -f 1`
-echo "core_size="$core"; setupwiz_tablet_size="$setupwiztablet"; setupwiz_phone_size="$setupwizphone"; keybd_lib_size="$keybdlib";">> installer.data
+echo "core_size="$core"; setupwiz_size="$setupwiz"; keybd_lib_size="$keybdlib";">> installer.data
 
 cat >>installer.data <<EOF
 
@@ -89,7 +88,6 @@ music
 newsstand
 newswidget
 playgames
-sunbeam
 talkback
 wallet
 ";

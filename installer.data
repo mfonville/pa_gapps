@@ -1,5 +1,5 @@
 # Installation Data for PA Lollipop GApps Installer by @mfonville based on the work of @TKruzze
-# Last Updated: 2015-05-01
+# Last Updated: 2015-05-02
 # _____________________________________________________________________________________________________________________
 #                                             Define Current Package Variables
 # List of GApps packages that can be installed with this installer
@@ -9,8 +9,8 @@ pkg_names="pico nano micro mini full stock";
 installer_name="PA Google Stock GApps 5.1 - ";
 
 req_android_version="5.1";
-keybd_lib_filename1="libjni_latinime.so";
-keybd_lib_filename2="libjni_latinimegoogle.so";
+keybd_lib_filename1="libjni_latinimegoogle.so";
+keybd_lib_filename2="libjni_latinime.so";
 FaceLock_lib_filename="libfacelock_jni.so";
 
 # Google Play Services version sizes
@@ -20,7 +20,7 @@ gms_0_size=48452; gms_4_size=38980; gms_6_size=39428; gms_8_size=40332;
 pg_0_size=8028; pg_4_size=5336; pg_6_size=5464; pg_8_size=5856;
 
 # Core & Optional Apps size
-core_size=21980; setupwiz_tablet_size=2856; setupwiz_phone_size=3944; keybd_lib_size=672;
+core_size=21980; setupwiz_size=3140; keybd_lib_size=672;
 
 # Buffer of extra system space to require for GApps install (9216=9MB)
 # This will allow for some ROM size expansion when GApps are restored
@@ -60,7 +60,6 @@ music
 newsstand
 newswidget
 playgames
-sunbeam
 talkback
 wallet
 ";

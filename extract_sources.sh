@@ -11,9 +11,20 @@
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #    GNU General Public License for more details.
 #
+#####A helpful recursive copy script to install files to the correct location
+copy() {
+	if [ -d "$1" ]
+		then
+		for f in $1/*; do
+			copy $f "$2/$(basename $f)"
+		done
+	fi
+	if [ -f "$1" ]
+		then
+  		install -D -p $1 $2
+	fi
+}
 #####---------FIRST THE SPECIAL CASES---------
-#We miss the source APKs for the SetupWizard, if anyone can provide a reliable and up-to-date source of those, please notify me!
-
 #GMSCore
 #We try to find always the latest version apk that is found in the directory per dpi
 gms0=`find SourceAPKs/ -iname '*com.google.android.gms*430)*' | sort -r | head -1`
@@ -34,6 +45,10 @@ zip -U $gms6 -O GMSCore/6/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk --exclude
 zip -U $gms8 -O GMSCore/8/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk --exclude javax* lib* jsr* third_party/java_src/js*_inject*
 unzip -j -o $gmscommon -d GMSCore/common/priv-app/PrebuiltGmsCore/lib/arm lib*
 
+#Keyboard Lib
+keybd_lib=`find SourceAPKs/ -iname 'libjni_latinimegoogle.so' | head -1`
+copy $keybd_lib "Optional/keybd_lib/lib/"
+
 #PlayGames
 #We try to find always the latest version apk that is found in the directory per dpi
 pg0=`find SourceAPKs/ -iname '*com.google.android.play.games*000)*' | sort -r | head -1`
@@ -51,7 +66,11 @@ zip -U $pg4 -O PlayGames/4/app/PlayGames/PlayGames.apk --exclude javax* lib* jsr
 zip -U $pg6 -O PlayGames/6/app/PlayGames/PlayGames.apk --exclude javax* lib* jsr* third_party/java_src/js*_inject*
 zip -U $pg8 -O PlayGames/8/app/PlayGames/PlayGames.apk --exclude javax* lib* jsr* third_party/java_src/js*_inject*
 
-#I don't have the source for Optional/keybd_lib/lib/libjni_latinime.so (the bundled version), if someone can provide me with a reliable and up-to-date source, please notify me!
+#SetupWizard
+setupwiz=`find SourceAPKs/ -iname 'SetupWizard.apk' | head -1`
+copy $setupwiz "SetupWizard/priv-app/SetupWizard/"
+
+#We miss the source APKs for the SetupWizard, if anyone can provide a reliable and up-to-date source of those, please notify me!
 
 #####---------NOW THE GENERIC PACKAGES---------
 #Books
@@ -64,7 +83,10 @@ calendar=`find SourceAPKs/ -iname '*com.google.android.calendar*' | sort -r | he
 rm GApps/calendargoogle/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk
 zip -U $calendar -O GApps/calendargoogle/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk --exclude javax* lib* jsr* third_party/java_src/js*_inject*
 
-#I have no reliable source for GoogleCalendarSyncAdapter (calsync). If you have one, please notify me!
+#GoogleCalendarSyncAdapter (calsync) is not updated anymore(!) This is just a trivial line though
+calsync=`find SourceAPKs/ -iname 'GoogleCalendarSyncAdapter.apk' | sort -r | head -1`
+rm GApps/calsync/app/GoogleCalendarSyncAdapter/GoogleCalendarSyncAdapter.apk
+zip -U $calendar -O GApps/calsync/app/GoogleCalendarSyncAdapter/GoogleCalendarSyncAdapter.apk --exclude javax* lib* jsr* third_party/java_src/js*_inject*
 
 #Camera
 camera=`find SourceAPKs/ -iname '*com.google.android.googlecamera*' | sort -r | head -1`
@@ -112,7 +134,13 @@ exchange=`find SourceAPKs/ -iname '*com.google.android.gm.exchange*' | sort -r |
 rm GApps/exchangegoogle/app/PrebuiltExchange3Google/PrebuiltExchange3Google.apk
 zip -U $exchange -O GApps/exchangegoogle/app/PrebuiltExchange3Google/PrebuiltExchange3Google.apk --exclude javax* lib* jsr* third_party/java_src/js*_inject*
 
-#I have no reliable source for Google Face Unlock (faceunlock). If you have one, please notify me!
+#FaceLock (from Nexus sources)
+facelock=`find SourceAPKs/ -iname 'FaceLock.apk' | head -1`
+copy $facelock "GApps/faceunlock/app/FaceLock/"
+facelocklib=`find SourceAPKs/ -iname 'libfacelock_jni.so' | head -1`
+copy $facelocklib "GApps/faceunlock/lib/"
+pittpatt=`find SourceAPKs/ -iname 'pittpatt' | head -1`
+copy $pittpatt "GApps/faceunlock/vendor/pittpatt"
 
 #Gmail CAREFUL, mind the extra dash at the pattern end, to not by accident select GMS
 gmail=`find SourceAPKs/ -iname '*com.google.android.gm-*' | sort -r | head -1`
@@ -204,14 +232,14 @@ rm GApps/slides/app/EditorsSlides/EditorsSlides.apk
 zip -U $slides -O GApps/slides/app/EditorsSlides/EditorsSlides.apk --exclude javax* lib* jsr* third_party/java_src/js*_inject*
 unzip -j -o $slides -d GApps/slides/app/EditorsSlides/lib/arm lib*
 
-#WTF is speech? and where to get it?
+#Speech (from Nexus sources)
+speech=`find SourceAPKs/ -iname 'srec' | head -1`
+copy $speech "GApps/speech/usr/srec"
 
 #Street
 street=`find SourceAPKs/ -iname '*com.google.android.street*' | sort -r | head -1`
 rm GApps/street/app/Street/Street.apk
 zip -U $street -O GApps/street/app/Street/Street.apk --exclude javax* lib* jsr* third_party/java_src/js*_inject*
-
-#I have no reliable source for Sunbeam (sunbeam). If you have one, please notify me!
 
 #Talkback
 talkback=`find SourceAPKs/ -iname '*com.google.android.marvin.talkback*' | sort -r | head -1`

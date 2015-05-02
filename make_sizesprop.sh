@@ -42,7 +42,6 @@ echo "sheets_size="`du -s --apparent-size GApps/sheets | cut -f 1` >> sizes.prop
 echo "slides_size="`du -s --apparent-size GApps/slides | cut -f 1` >> sizes.prop
 echo "speech_size="`du -s --apparent-size GApps/speech | cut -f 1` >> sizes.prop
 echo "street_size="`du -s --apparent-size GApps/street | cut -f 1` >> sizes.prop
-echo "sunbeam_size="`du -s --apparent-size GApps/sunbeam | cut -f 1` >> sizes.prop
 echo "talkback_size="`du -s --apparent-size GApps/talkback | cut -f 1` >> sizes.prop
 echo "wallet_size="`du -s --apparent-size GApps/wallet | cut -f 1` >> sizes.prop
 echo "youtube_size="`du -s --apparent-size GApps/youtube | cut -f 1` >> sizes.prop

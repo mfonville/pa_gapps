@@ -1,0 +1,50 @@
+Download one of the latest Nexus images from https://developers.google.com/android/nexus/images
+
+Extract the image-xxxxx-xxxxxx.zip from from the tgz archive
+
+Extract the system.img from the image-xxxxx-xxxxxx.zip
+
+Convert the system.img from a sparse android file to a disk-image file using android-simg2img (a pre-compiled x64 executable is included): simg2img system.img system.raw.img
+
+Open the system.raw.img using a disk-mount application
+
+Next copy the following files from the mounted image to the Nexus folder:
+
+From /app/:
+GoogleContactsSyncAdapter
+FaceLock
+
+From /etc/permissions/:
+com.google.android.camera2.xml
+com.google.android.maps.xml
+com.google.android.media.effects.xml
+com.google.widevine.software.drm.xml
+
+From /etc/preferred-apps/:
+google.xml
+
+From /framework/:
+com.google.android.camera2.jar
+com.google.android.maps.jar
+com.google.android.media.effects.jar
+com.google.widevine.software.drm.jar
+
+From /lib/:
+libfacelock_jni.so
+libjni_latinimegoogle.so
+
+From /priv-app/:
+GoogleBackupTransport
+GoogleFeedback
+GoogleLoginService
+GoogleOneTimeInitializer
+GooglePartnerSetup
+GoogleServicesFramework
+Phonesky
+SetupWizard
+
+From /usr/:
+srec
+
+From /vendor/:
+pittpatt
