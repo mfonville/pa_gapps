@@ -620,13 +620,7 @@ if ( ! contains "$gapps_list" "calendargoogle" ) && [ $config_type != "include" 
     gapps_list="${gapps_list}calsync"$'\n';
 fi;
 
-# Add bksync or calsync to $gapps_list IF $config_type = "include" AND $g_conf contain bksync or calsync
-#for i in bksync calsync; do
-#    if [ $config_type = "include" ] && ( grep -qi "$i" "$g_conf" ); then
-#        gapps_list="${gapps_list}$i"$'\n';
-#    fi;
-#done;
-# REMOVE 3 LINES BELOW ONCE bksync HAS BEEN ADDED BACK
+# Add calsync to $gapps_list IF $config_type = "include" AND $g_conf contains calsync
 if [ $config_type = "include" ] && ( grep -qi "calsync" "$g_conf" ); then
     gapps_list="${gapps_list}calsync"$'\n';
 fi;

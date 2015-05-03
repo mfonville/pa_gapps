@@ -11,10 +11,18 @@
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #    GNU General Public License for more details.
 #
-rm gapps_unsigned.zip
 find ./ -name '*~' | xargs rm
+
+if [ -f "gapps_unsigned.zip" ]
+then
+	rm gapps_unsigned.zip
+fi
 zip -r -Z store gapps_unsigned.zip Core GApps GMSCore Optional PlayGames SetupWizard META-INF bkup_tail.sh g.prop gapps-remove.txt installer.data sizes.prop 
+
 now=$(date +"%Y%m%d")
-rm pa_gapps-5.1-$now.zip
+if [ -f "pa_gapps-5.1-$now.zip" ]
+then
+	rm pa_gapps-5.1-$now.zip
+fi
 java -Xmx3072m -jar signapk.jar -w testkey.x509.pem testkey.pk8 gapps_unsigned.zip pa_gapps-5.1-$now.zip
 rm gapps_unsigned.zip
