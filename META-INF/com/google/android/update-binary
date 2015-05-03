@@ -1,9 +1,19 @@
 #!/sbin/sh
+#This file is part of The PA GApps script of @mfonville.
+#
+#    The PA GApps scripts are free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    These scripts are distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
 #
 # PA GApps 2.0a Shell Script Installer
 # Created by @mfonville, based on the work of @TKruzze and @osm0sis
 #
-# Last Updated: 2015-05-02
 unzip -o "$3" installer.data sizes.prop g.prop gapps-remove.txt bkup_tail.sh -d /tmp;
 . /tmp/installer.data;
 . /tmp/sizes.prop;
@@ -428,9 +438,9 @@ if [ -e /system/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk -a 
     if [ -n "$(grep ro.addon.pa_version $g_prop)" ]; then
         log "Current GApps Version" "$(file_getprop $g_prop ro.addon.pa_version)";
         if [ -n "$(grep ro.addon.pa_type $g_prop)" ]; then
-            log "Curent PA GApps Package" "$(file_getprop $g_prop ro.addon.pa_type)";
+            log "Current PA GApps Package" "$(file_getprop $g_prop ro.addon.pa_type)";
         else
-            log "Curent PA GApps Package" "Unknown";
+            log "Current PA GApps Package" "Unknown";
         fi;
     else
         log "Current GApps Version" "NON PA GApps Currently Installed (FAILURE)";
@@ -451,7 +461,7 @@ if [ -e /system/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk -a 
 else
     # User does NOT have a GApps package installed on their device
     log "Current GApps Version" "NO GApps Installed";
-    log "Curent PA GApps Package" "NO GApps Installed";
+    log "Current PA GApps Package" "NO GApps Installed";
 
     # Use the opportunity of No GApps installed to check for potential ROM conflicts when deleting existing GApps files
     while read gapps_file; do
@@ -551,11 +561,6 @@ if ( ! contains "$gapps_list" "chrome" ) && ( ! grep -qi "browser" "$g_conf" ); 
     aosp_remove_list=${aosp_remove_list/browser};
     remove_browser=false[default];
 fi;
-
-# Add bksync to $gapps_list IF $config_type != "include" AND $g_conf does NOT contain bksync AND we're NOT removing 'browser'
-#if ( ! contains "$aosp_remove_list" "browser" ) && [ $config_type != "include" ] && ( ! grep -qi "bksync" "$g_conf" ); then
-#    gapps_list="${gapps_list}bksync"$'\n';
-#fi;
 
 # If we're NOT installing gmail make certain 'email' is NOT in $aosp_remove_list UNLESS 'email' is in $g_conf
 if ( ! contains "$gapps_list" "gmail" ) && ( ! grep -qi "email" "$g_conf" ); then
@@ -913,11 +918,11 @@ echo -e "$bkup_header" > /system/addon.d/70-gapps.sh;
 echo -e "$bkup_list" >> /system/addon.d/70-gapps.sh;
 cat $bkup_tail >> /system/addon.d/70-gapps.sh;
 # _____________________________________________________________________________________________________________________
-#                                                  Fix Permissions and say 'Goodnight Gracie'
+#                                                  Fix Permissions
 set_progress 0.83;
 ui_print "- Fixing permissions & contexts";
 ui_print " ";
-set_perm_recursive 0 0 755 644 "/system/app" "/system/framework" "/system/lib" "/system/priv-app" "/system/usr/srec/en-US" "/system/vendor/pittpatt" "/system/etc/permissions" "/system/etc/preferred-apps";
+set_perm_recursive 0 0 755 644 "/system/app" "/system/framework" "/system/lib" "/system/priv-app" "/system/usr/srec" "/system/vendor/pittpatt" "/system/etc/permissions" "/system/etc/preferred-apps";
 
 set_progress 0.85;
 set_perm_recursive 0 0 755 755 "/system/addon.d";
@@ -929,11 +934,11 @@ set_perm 0 0 644 $g_prop;
 
 # Set contexts on all files we installed
 set_progress 0.88;
-ch_con_recursive "/system/app" "/system/framework" "/system/lib" "/system/priv-app" "/system/usr/srec/en-US" "/system/vendor/pittpatt" "/system/etc/permissions" "/system/etc/preferred-apps" "/system/addon.d";
+ch_con_recursive "/system/app" "/system/framework" "/system/lib" "/system/priv-app" "/system/usr/srec" "/system/vendor/pittpatt" "/system/etc/permissions" "/system/etc/preferred-apps" "/system/addon.d";
 ch_con $g_prop;
 
 set_progress 0.92;
-quit; # 'Goodnight Gracie'
+quit;
 
 ui_print "- Installation complete!";
 ui_print " ";

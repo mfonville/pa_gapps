@@ -1,5 +1,5 @@
 # pa_gapps
-Paranoid Android Google Apps
+Paranoid Android Google Apps by @mfonville
 
 This is the continuation of the Paranoid Android Google Apps that was started by @TKruzze
 
@@ -7,6 +7,7 @@ As big fan of the original package, I continued his effort. I recognized that mo
 
 ## extract_sources.sh
 This script searchs the SourceAPKs directory for the latest version of the apps. The directory where they are stored do not matter, it searches recursively for the latest version. It is important though to keep the identifying name within the filename of the apk.
+It will copy the executables and libraries to their correct location, ready to be packaged. It will also align the APKs.
 
 ## make_gprop.sh
 The goal of this file is to generate a g.prop file with the correct properties
@@ -21,4 +22,24 @@ The goal of this file is to genarate the size.prop file with correct sizes about
 When you have extracted the most recent sources to be put in the package, and have ran all the other make-scripts, you can create a signed flashable ZIP-package using this script.
 
 # Changes in 'options' compared to original package
-Sunbeam has been completely removed from the package
+*Sunbeam has been completely removed from the package
+*Bookmarksync (bksync) does not exist anymore, removed then also all its traces from the scripts
+*More advanced options for removal:
+  *BasicDreams
+  *CMAccount
+  *CMUpdater
+  *Galaxy
+  *HoloSpiral
+  *LiveWallpapers
+  *LockClock
+  *NoiseField
+  *Phasebeam
+  *PhotoPhase
+  *PhotoTable
+  *Terminal
+  *Themes (Will break the link Cyanogen Settings to Themes though)
+  *VisualizationWallpapers
+  *WhisperPush
+
+##Todo:
+Make a script that will automatically update the contents of gapps-remove.txt

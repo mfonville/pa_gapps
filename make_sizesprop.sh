@@ -11,7 +11,6 @@
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #    GNU General Public License for more details.
 #
-echo "bksync_size=0" > sizes.prop
 echo "books_size="`du -s --apparent-size GApps/books | cut -f 1` >> sizes.prop
 echo "calendargoogle_size="`du -s --apparent-size GApps/calendargoogle | cut -f 1` >> sizes.prop
 echo "calsync_size="`du -s --apparent-size GApps/calsync | cut -f 1` >> sizes.prop

@@ -11,6 +11,11 @@
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #    GNU General Public License for more details.
 #
+#####---------CHECK FOR EXISTANCE OF SOME BINARIES---------
+command -v java >/dev/null 2>&1 || { echo "java is required but it's not installed.  Aborting." >&2; exit 1; }
+command -v zip >/dev/null 2>&1 || { echo "zip is required but it's not installed.  Aborting." >&2; exit 1; }
+
+
 find ./ -name '*~' | xargs rm
 
 if [ -f "gapps_unsigned.zip" ]

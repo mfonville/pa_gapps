@@ -37,7 +37,7 @@ E_NONPA=40; # NON-PA GApps Currently Installed
 E_64BIT=64 ; # 64-bit Device Detected
 #_________________________________________________________________________________________________________________
 #                                             GApps List (Applications user can Select/Deselect)
-# bksync and calsync will be added to GApps Install List as needed during script execution
+# calsync will be added to GApps Install List as needed during script execution
 stock_gapps_list="
 cameragoogle
 keyboardgoogle
@@ -101,25 +101,42 @@ picotts
 # _____________________________________________________________________________________________________________________
 #                                             Optional Stock/AOSP/ROM Removal List
 optional_aosp_remove_list="
+basicdreams
 calendarstock
 camerastock
 cmaudiofx
+cmaccount
 cmeleven
-eleven
 cmfilemanager
+cmupdater
 cmwallpapers
 exchangestock
 fmradio
+galaxy
+holospiral
 keyboardstock
+livewallpapers
+lockclock
+noisefield
+phasebeam
+photophase
+phototable
+terminal
+themes
 simtoolkit
 studio
 sykopath
+visualizationwallpapers
+whisperpush
 ";
-# supporting 'eleven' above temporarily to give users time to switch to cmeleven (see also update-binary)
 # _____________________________________________________________________________________________________________________
 #                                             Stock/AOSP/ROM File Removal Lists
 browser_list="
 app/Browser
+";
+
+basicdreams_list="
+app/BasicDreams
 ";
 
 # Must be used when GoogleCalendar is installed
@@ -136,6 +153,10 @@ priv-app/Camera
 priv-app/Camera2
 ";
 
+cmaccount_list="
+priv-app/CMAccount
+";
+
 cmaudiofx_list="
 priv-app/AudioFX
 ";
@@ -146,6 +167,10 @@ app/Eleven
 
 cmfilemanager_list="
 app/CMFileManager
+";
+
+cmupdater_list="
+priv-app/CMUpdater
 ";
 
 cmwallpapers_list="
@@ -166,11 +191,19 @@ app/FM2
 app/FMRecord
 ";
 
+galaxy_list="
+app/Galaxy4
+";
+
 gallery_list="
 app/Gallery
 priv-app/Gallery
 app/Gallery2
 priv-app/Gallery2
+";
+
+holospiral_list="
+app/HoloSpiralWallpaper
 ";
 
 # Must be used when GoogleKeyboard is installed
@@ -197,8 +230,32 @@ priv-app/SlimLauncher
 priv-app/Trebuchet
 ";
 
+livewallpapers_list="
+app/LiveWallpapers
+";
+
+lockclock_list="
+app/LockClock
+";
+
 mms_list="
 priv-app/Mms
+";
+
+noisefield_list="
+app/NoiseField
+";
+
+phasebeam_list="
+app/PhaseBeam
+";
+
+photophase_list="
+app/PhotoPhase
+";
+
+phototable_list="
+app/PhotoTable
 ";
 
 picotts_list="
@@ -219,6 +276,23 @@ app/VideoEditor
 
 sykopath_list="
 app/Layers
+";
+
+terminal_list="
+app/Terminal
+";
+
+themes_list="
+priv-app/ThemeChooser
+priv-app/ThemesProvider
+";
+
+visualizationwallpapers_list="
+app/VisualizationWallpapers
+";
+
+whisperpush_list="
+app/WhisperPush
 ";
 # _____________________________________________________________________________________________________________________
 #                                             Permanently Removed Folders
