@@ -22,24 +22,24 @@ The goal of this file is to genarate the size.prop file with correct sizes about
 When you have extracted the most recent sources to be put in the package, and have ran all the other make-scripts, you can create a signed flashable ZIP-package using this script.
 
 # Changes in 'options' compared to original package
-*Sunbeam has been completely removed from the package
-*Bookmarksync (bksync) does not exist anymore, removed then also all its traces from the scripts
-*More advanced options for removal:
-  *BasicDreams
-  *CMAccount
-  *CMUpdater
-  *Galaxy
-  *HoloSpiral
-  *LiveWallpapers
-  *LockClock
-  *NoiseField
-  *Phasebeam
-  *PhotoPhase
-  *PhotoTable
-  *Terminal
-  *Themes (Will break the link Cyanogen Settings to Themes though)
-  *VisualizationWallpapers
-  *WhisperPush
+* Sunbeam has been completely removed from the package
+* Bookmarksync (bksync) does not exist anymore, removed then also all its traces from the scripts
+* More advanced options for removal:
+  * BasicDreams
+  * CMAccount
+  * CMUpdater
+  * Galaxy
+  * HoloSpiral
+  * LiveWallpapers
+  * LockClock
+  * NoiseField
+  * Phasebeam
+  * PhotoPhase
+  * PhotoTable
+  * Terminal
+  * Themes (Will break the link Cyanogen Settings to Themes though)
+  * VisualizationWallpapers
+  * WhisperPush
 
 ##Todo:
 Make a script that will automatically update the contents of gapps-remove.txt
