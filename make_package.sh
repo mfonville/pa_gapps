@@ -15,19 +15,24 @@
 command -v java >/dev/null 2>&1 || { echo "java is required but it's not installed.  Aborting." >&2; exit 1; }
 command -v zip >/dev/null 2>&1 || { echo "zip is required but it's not installed.  Aborting." >&2; exit 1; }
 
-
-find ./ -name '*~' | xargs rm
+#Delete irritating temporary files
+#find ./ -name '*~' | xargs rm
 
 if [ -f "gapps_unsigned.zip" ]
 then
 	rm gapps_unsigned.zip
 fi
-zip -q -r -Z store gapps_unsigned.zip Core GApps GMSCore Optional PlayGames META-INF bkup_tail.sh g.prop gapps-remove.txt installer.data sizes.prop 
+
+#Zip quietly, recursive BUT WITHOUT THE DIRECTORIES (or flashing wil fail), with maximum compression, and exclude those irritating temporary files
+zip -q -r -D -X -9 gapps_unsigned.zip Core GApps GMSCore Optional PlayGames META-INF bkup_tail.sh g.prop gapps-remove.txt installer.data sizes.prop -x\*~
 
 now=$(date +"%Y%m%d")
 if [ -f "pa_gapps-5.1-$now.zip" ]
 then
 	rm pa_gapps-5.1-$now.zip
 fi
-java -Xmx3072m -jar signapk.jar -w testkey.x509.pem testkey.pk8 gapps_unsigned.zip pa_gapps-5.1-$now.zip
-rm gapps_unsigned.zip
+./signapk.sh sign gapps_unsigned.zip pa_gapps-5.1-$now.zip
+if [ $? -eq 0 ]; then #if signing did succeed
+    rm gapps_unsigned.zip
+fi
+
