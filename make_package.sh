@@ -22,7 +22,7 @@ if [ -f "gapps_unsigned.zip" ]
 then
 	rm gapps_unsigned.zip
 fi
-zip -q -r -Z store gapps_unsigned.zip Core GApps GMSCore Optional PlayGames SetupWizard META-INF bkup_tail.sh g.prop gapps-remove.txt installer.data sizes.prop 
+zip -q -r -Z store gapps_unsigned.zip Core GApps GMSCore Optional PlayGames META-INF bkup_tail.sh g.prop gapps-remove.txt installer.data sizes.prop 
 
 now=$(date +"%Y%m%d")
 if [ -f "pa_gapps-5.1-$now.zip" ]
