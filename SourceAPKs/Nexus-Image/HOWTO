@@ -36,7 +36,6 @@ Next copy the following files from the mounted system image to the Nexus folder:
 /priv-app/GoogleOneTimeInitializer
 /priv-app/GooglePartnerSetup
 /priv-app/GoogleServicesFramework
-/priv-app/Phonesky
 /priv-app/SetupWizard
 
 /usr/srec

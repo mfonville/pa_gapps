@@ -1,5 +1,5 @@
 # Installation Data for PA Lollipop GApps Installer by @mfonville based on the work of @TKruzze
-# Last Updated: 2015-05-03
+# Last Updated: 2015-05-04
 # _____________________________________________________________________________________________________________________
 #                                             Define Current Package Variables
 # List of GApps packages that can be installed with this installer
@@ -20,7 +20,7 @@ gms_0_size=48452; gms_4_size=38980; gms_6_size=39432; gms_8_size=40332;
 pg_0_size=8028; pg_4_size=5336; pg_6_size=5464; pg_8_size=5856;
 
 # Core & Optional Apps size
-core_size=23620; keybd_lib_size=672;
+core_size=23112; keybd_lib_size=672;
 
 # Buffer of extra system space to require for GApps install (9216=9MB)
 # This will allow for some ROM size expansion when GApps are restored
