@@ -225,7 +225,7 @@ if [ "x$1" = "xsign" ]; then
   if [ ! -e "$PKEY" ]; then echo "Missing private key! I looked in '$PKEY'"; exit 9 ; fi
   if [ ! -e "$CERT" ]; then echo "Missing cert! I looked in '$CERT'"; exit 9 ; fi
   IFS=$esc
-  ORIG=$($BB $READLINK -f "$2")
+  ORIG=$($READLINK -f "$2")
 
   mf="Manifest-Version: 1.0\r\nCreated-By: 1.0 (Android SignApk)\r\n\r\n"
   sf=""
