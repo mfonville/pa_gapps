@@ -171,8 +171,8 @@ zip -q -U $gmail -O GApps/gmail/app/PrebuiltGmail/PrebuiltGmail.apk --exclude li
 
 #GoogleNow
 googlenow=`find SourceAPKs/ -iname '*com.google.android.launcher*' | sort -r | head -1`
-rm GApps/googlenow/app/GoogleHome/GoogleHome.apk
-zip -q -U $googlenow -O GApps/googlenow/app/GoogleHome/GoogleHome.apk --exclude lib*
+rm GApps/googlenow/priv-app/GoogleHome/GoogleHome.apk
+zip -q -U $googlenow -O GApps/googlenow/priv-app/GoogleHome/GoogleHome.apk --exclude lib*
 
 #GooglePlus
 googleplus=`find SourceAPKs/ -iname '*com.google.android.apps.plus*' | sort -r | head -1`
