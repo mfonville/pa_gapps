@@ -49,7 +49,8 @@ core=`du -s Core | cut -f 1`
 keybdlib=`du -s Optional/keybd_lib | cut -f 1`
 echo "core_size="$core"; keybd_lib_size="$keybdlib";">> installer.data
 
-cat >>installer.data <<EOF
+#Note the use of ' here to have the LITERAL contents (also the $signs) into the file
+tee >>installer.data <<'EOF'
 
 # Buffer of extra system space to require for GApps install (9216=9MB)
 # This will allow for some ROM size expansion when GApps are restored
