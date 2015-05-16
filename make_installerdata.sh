@@ -29,18 +29,20 @@ FaceLock_lib_filename="libfacelock_jni.so";
 
 # Google Play Services version sizes' >> installer.data
 gms0=`du -s GMSCore/0 | cut -f 1`
+gms2=`du -s GMSCore/2 | cut -f 1`
 gms4=`du -s GMSCore/4 | cut -f 1`
 gms6=`du -s GMSCore/6 | cut -f 1`
 gms8=`du -s GMSCore/8 | cut -f 1`
 gmscommon=`du -s GMSCore/common | cut -f 1`
-echo "gms_0_size="`expr $gms0 + $gmscommon`"; gms_4_size="`expr $gms4 + $gmscommon`"; gms_6_size="`expr $gms6 + $gmscommon`"; gms_8_size="`expr $gms8 + $gmscommon`";
+echo "gms_0_size="`expr $gms0 + $gmscommon`"; gms_2_size="`expr $gms2 + $gmscommon`"; gms_4_size="`expr $gms4 + $gmscommon`"; gms_6_size="`expr $gms6 + $gmscommon`"; gms_8_size="`expr $gms8 + $gmscommon`";
 
 # Google Play Games version sizes" >> installer.data
 pg0=`du -s PlayGames/0 | cut -f 1`
+pg2=`du -s PlayGames/0 | cut -f 1`
 pg4=`du -s PlayGames/4 | cut -f 1`
 pg6=`du -s PlayGames/6 | cut -f 1`
 pg8=`du -s PlayGames/8 | cut -f 1`
-echo "pg_0_size="$pg0"; pg_4_size="$pg4"; pg_6_size="$pg6"; pg_8_size="$pg8";
+echo "pg_0_size="$pg0"; pg_2_size="$pg2"; pg_4_size="$pg4"; pg_6_size="$pg6"; pg_8_size="$pg8";
 
 # Core & Optional Apps size" >> installer.data
 core=`du -s Core | cut -f 1`

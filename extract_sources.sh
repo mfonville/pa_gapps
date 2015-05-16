@@ -33,6 +33,7 @@ command -v zipalign >/dev/null 2>&1 || { echo "zipalign is required but it's not
 #GMSCore
 #We try to find always the latest version apk that is found in the directory per dpi
 gms0=`find SourceAPKs/ -iname '*com.google.android.gms*430)*' | sort -r | head -1`
+#care gms2 is missing, we use for that gms0
 gms4=`find SourceAPKs/ -iname '*com.google.android.gms*434)*' | sort -r | head -1`
 gms6=`find SourceAPKs/ -iname '*com.google.android.gms*436)*' | sort -r | head -1`
 gms8=`find SourceAPKs/ -iname '*com.google.android.gms*438)*' | sort -r | head -1`
@@ -40,11 +41,13 @@ gms8=`find SourceAPKs/ -iname '*com.google.android.gms*438)*' | sort -r | head -
 gmscommon=`find SourceAPKs/ -iname '*com.google.android.gms*43*)*' | sort -r | head -1`
 
 rm GMSCore/0/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk
+rm GMSCore/2/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk
 rm GMSCore/4/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk
 rm GMSCore/6/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk
 rm GMSCore/8/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk
 
 zip -q -U $gms0 -O GMSCore/0/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk --exclude lib*
+zip -q -U $gms0 -O GMSCore/2/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk --exclude lib* #care we se gms0 for gms2
 zip -q -U $gms4 -O GMSCore/4/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk --exclude lib*
 zip -q -U $gms6 -O GMSCore/6/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk --exclude lib*
 zip -q -U $gms8 -O GMSCore/8/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk --exclude lib*
@@ -56,17 +59,20 @@ copy $keybd_lib "Optional/keybd_lib/lib/"
 
 #PlayGames
 #We try to find always the latest version apk that is found in the directory per dpi
-pg0=`find SourceAPKs/ -iname '*com.google.android.play.games*000)*' | sort -r | head -1`
-pg4=`find SourceAPKs/ -iname '*com.google.android.play.games*004)*' | sort -r | head -1`
-pg6=`find SourceAPKs/ -iname '*com.google.android.play.games*006)*' | sort -r | head -1`
-pg8=`find SourceAPKs/ -iname '*com.google.android.play.games*008)*' | sort -r | head -1`
+pg0=`find SourceAPKs/ -iname '*com.google.android.play.games*030)*' | sort -r | head -1`
+pg2=`find SourceAPKs/ -iname '*com.google.android.play.games*034)*' | sort -r | head -1`
+pg4=`find SourceAPKs/ -iname '*com.google.android.play.games*034)*' | sort -r | head -1`
+pg6=`find SourceAPKs/ -iname '*com.google.android.play.games*036)*' | sort -r | head -1`
+pg8=`find SourceAPKs/ -iname '*com.google.android.play.games*038)*' | sort -r | head -1`
 
 rm PlayGames/0/app/PlayGames/PlayGames.apk
+rm PlayGames/2/app/PlayGames/PlayGames.apk
 rm PlayGames/4/app/PlayGames/PlayGames.apk
 rm PlayGames/6/app/PlayGames/PlayGames.apk
 rm PlayGames/8/app/PlayGames/PlayGames.apk
 
 zip -q -U $pg0 -O PlayGames/0/app/PlayGames/PlayGames.apk --exclude lib*
+zip -q -U $pg2 -O PlayGames/2/app/PlayGames/PlayGames.apk --exclude lib*
 zip -q -U $pg4 -O PlayGames/4/app/PlayGames/PlayGames.apk --exclude lib*
 zip -q -U $pg6 -O PlayGames/6/app/PlayGames/PlayGames.apk --exclude lib*
 zip -q -U $pg8 -O PlayGames/8/app/PlayGames/PlayGames.apk --exclude lib*
