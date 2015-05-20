@@ -14,7 +14,7 @@ keybd_lib_filename2="libjni_latinime.so";
 FaceLock_lib_filename="libfacelock_jni.so";
 
 # Google Play Services version sizes
-gms_0_size=45168; gms_2_size=45172; gms_4_size=37204; gms_6_size=37772; gms_8_size=38728;
+gms_0_size=45172; gms_2_size=45168; gms_4_size=37204; gms_6_size=37776; gms_8_size=38728;
 
 # Google Play Games version sizes
 pg_0_size=11584; pg_2_size=11584; pg_4_size=8432; pg_6_size=8576; pg_8_size=9032;
