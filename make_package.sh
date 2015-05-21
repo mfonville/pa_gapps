@@ -30,7 +30,7 @@ if [ -f "pa_gapps-5.1-$now.zip" ]
 then
 	rm pa_gapps-5.1-$now.zip
 fi
-./signapk.sh sign gapps_unsigned.zip pa_gapps-5.1-$now.zip
+./signapk.sh -q sign gapps_unsigned.zip pa_gapps-5.1-$now.zip
 if [ $? -eq 0 ]; then #if signing did succeed
     rm gapps_unsigned.zip
 fi
