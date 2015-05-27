@@ -1,5 +1,5 @@
 # Installation Data for PA Lollipop GApps Installer by @mfonville based on the work of @TKruzze
-# Last Updated: 2015-05-24
+# Last Updated: 2015-05-27
 # _____________________________________________________________________________________________________________________
 #                                             Define Current Package Variables
 # List of GApps packages that can be installed with this installer
@@ -14,13 +14,13 @@ keybd_lib_filename2="libjni_latinime.so";
 FaceLock_lib_filename="libfacelock_jni.so";
 
 # Google Play Services version sizes
-gms_0_size=45396; gms_2_size=45392; gms_4_size=37428; gms_6_size=38000; gms_8_size=38952;
+gms_0_size=45396; gms_2_size=45396; gms_4_size=37432; gms_6_size=38000; gms_8_size=38952;
 
 # Google Play Games version sizes
 pg_0_size=11584; pg_2_size=11584; pg_4_size=8432; pg_6_size=8576; pg_8_size=9032;
 
 # Core & Optional Apps size
-core_size=23420; keybd_lib_size=672;
+core_size=23448; keybd_lib_size=672;
 
 # Buffer of extra system space to require for GApps install (9216=9MB)
 # This will allow for some ROM size expansion when GApps are restored
